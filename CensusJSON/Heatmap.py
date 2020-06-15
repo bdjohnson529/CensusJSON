@@ -23,7 +23,7 @@ def getHex(cmap, val):
     return val_hex
 
 
-def LinearHeatmap(value, max):
+def LinearHeatmap(val, max_val):
     """
     Generate heatmapped series, given numeric series in Pandas.
     :param series: Pandas series with numeric values
@@ -34,6 +34,6 @@ def LinearHeatmap(value, max):
     cmap = matplotlib.cm.get_cmap('plasma')
 
     # linear heatmap
-    color = getHex(cmap, 1 - (value / max))
+    color = getHex(cmap, 1 - (val / max_val))
     
     return color
