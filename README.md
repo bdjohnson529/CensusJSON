@@ -35,7 +35,10 @@ Apply linear heatmap.
 		df['Color'] = df['Population'].apply(lambda x: heatmap.LinearHeatmap(x, max))
 
 
-Filter to census tracts.
+Filter to census tracts, using a dataframe.
+
+| Tract ID | Population | County | Color |
+| -- | -- | -- | -- |
 
 		import CensusJSON.CensusTracts as tracts
 		outJson = tracts.filterGeoJSON(la_df, 'data/tracts.geojson')
