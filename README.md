@@ -37,7 +37,7 @@ Apply linear heatmap.
 
 Filter to census tracts, using a dataframe.
 
-| Tract ID | Population | County | Color |
+| TractID | Population | County | Color |
 | -- | -- | -- | -- |
 
 		import CensusJSON.CensusTracts as tracts
