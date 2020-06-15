@@ -20,7 +20,7 @@ From the base directory, run
 
 Command line:
 		
-		k2g 'data/tracts.kml', 'data/'
+		k2g data/tracts.kml, data/
 
 Python:
 		
