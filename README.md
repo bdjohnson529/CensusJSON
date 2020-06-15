@@ -32,7 +32,8 @@ Python:
 Apply linear heatmap.
 
 		import CensusJSON.Heatmap as heatmap
-		df['Color'] = df['Population'].apply(lambda x: heatmap.LinearHeatmap(x, max))
+		max_val = df['Population'].max()
+		df['Color'] = df['Population'].apply(lambda x: heatmap.LinearHeatmap(x, max_val))
 
 
 Filter to census tracts, using a dataframe.
