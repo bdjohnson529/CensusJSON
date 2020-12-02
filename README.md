@@ -12,20 +12,17 @@ From the base directory, run
 
 
 ## Census Tract Dataset
-1. Download the cartographic boundary KML file, representing the census tracts for your state, from the [US Census Bureau website](https://www.census.gov/geographies/mapping-files/time-series/geo/kml-cartographic-boundary-files.html).
-
-![Download location](src/img/download_uscb.png)
-
-2. Convert the KML file to a geoJSON file, using the toolbox [kml2geojson](https://github.com/mrcagney/kml2geojson).
-
-Command line:
+To convert a KML file to a geoJSON file, use the toolbox [kml2geojson](https://github.com/mrcagney/kml2geojson). From the command line:
 		
 		k2g data/tracts.kml, data/
-
-Python:
+		
+And in Python:
 		
 		import kml2geojson
 		kml2geojson.convert('data/tracts.kml', 'data/')
+
+Data Sources
+* [US Census Bureau website](https://www.census.gov/geographies/mapping-files/time-series/geo/kml-cartographic-boundary-files.html).
 
 ## Usage
 
