@@ -43,7 +43,7 @@ Filter to census tracts, using a dataframe.
 
 
 ## Contributing
-This repo uses Sphinx documentation. To build the documentation, execute the following command in the folder `docs`. HTML documentation is built in the folder `build`.
+This repo uses Sphinx documentation. To build the documentation, execute the following command in the folder `docs`. HTML documentation is built in the folder `build\sphinx`.
 
 
 		make html
